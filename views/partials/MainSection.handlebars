@@ -1,0 +1,11 @@
+<div class="productos">
+    <h1 class="text-center py-3">{{ mensajeBienvenida }}</h1>
+    <div class="row d-flex justify-content-between">
+        
+            {{#each productos}}
+            {{> Producto nombre=this.nombre}}
+            {{/each}}
+        
+
+    </div>
+</div>
